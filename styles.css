@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  background-image: url(https://images.squarespace-cdn.com/content/v1/553f799ae4b0306c99f97080/1589692176588-VSXBV5XAB35J2RIGXJ3X/space-earth.png?format=2500w);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+}
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: solid 1px #f9f9f188;
+}
+
+.logo>img {
+  height: 55px;
+  width: 55px;
+  padding: 3px;
+}
+
+
+.logo {
+  display: flex;
+  color: #641f5e;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo:hover {
+  color: #23145b;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+
+}
+
+nav>a {
+  color: #504375;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+nav>a:hover {
+
+  color: #e1e6e3;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 100px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.banner>h1 {
+  color: white;
+  text-align: center;
+}
+
+main>img {
+  width: 30rem;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+
+
+/*botao*/
+.botao {
+
+  font-family: Roboto, sans-serif;
+  font-weight: 0;
+  font-size: 18px;
+  color: #fff;
+  background-color: #23145b;
+  padding: 10px 30px;
+  border: 2px solid#23145b;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition: 1000ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.botao:hover {
+
+  transition: 1000ms;
+  padding: 10px 50px;
+  transform: translateY(-0px);
+  background-color: #fff;
+  color: #23145b;
+  border: solid 2px #23145b;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 50%;
+    width: 35%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 35%;
+  }
+}
